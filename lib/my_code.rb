@@ -38,7 +38,7 @@ def reduce_to_total(source_array)
   count = 0
   result = 0
   while source_array[count] do
-    result[count] = source_array[count] * -1
+    result[count] += source_array[count]
     count += 1
   end
   return result
