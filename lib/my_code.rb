@@ -56,7 +56,7 @@ end
 
 def reduce_to_any_true(source_array)
   count = 0
-  bool = true
+  bool = false
   while count < source_array.length do
     bool = bool || source_array[count]
     count += 1
