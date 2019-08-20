@@ -56,12 +56,13 @@ end
 
 def reduce_to_any_true(source_array)
   count = 0
-  bool = false
   while count < source_array.length do
-    bool = bool || source_array[count]
+    if (source_array[count])
+      return true
+    end
     count += 1
   end
-  return bool
+  return false
 end
 
 
